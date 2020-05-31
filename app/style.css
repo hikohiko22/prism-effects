@@ -1,16 +1,2071 @@
-#prism-effects{
+#prism-effects {
   width: 100vw;
-  height:100vh;
-  z-index:99999;
-  background-color:rgba(0,0,0,0.6);
-  position:fixed;
-  color:#fff;
-  top:0;
-  pointer-events: none;
+  height: 100vh;
+  z-index: 99999;
+  mix-blend-mode: luminosity;
+  background: radial-gradient(transparent 70%, rgba(0, 0, 0, 0.4) 100%);
+  position: fixed;
+  top: 0;
 }
+
 #prism-effects .particle {
-  width: 10px;
   height: 10px;
-  background-color: rgb(104, 255, 230);
-  margin:10px;
+  background-color: #FFF;
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
+
+#prism-effects .particle::before, #prism-effects .particle::after {
+  content: "";
+  background: radial-gradient(#fff, transparent);
+  display: block;
+  width: 200px;
+  left: -92.5px;
+  top: 2.5px;
+  position: absolute;
+  height: 10px;
+  border-radius: 100%;
+}
+
+#prism-effects .particle::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#prism-effects .particle::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#prism-effects .left, #prism-effects .right {
+  position: fixed;
+  height: 100vh;
+  width: 10vh;
+}
+
+#prism-effects .top, #prism-effects .bottom {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+}
+
+#prism-effects .left {
+  left: 0;
+}
+
+#prism-effects .left .particle:nth-child(1) {
+  -webkit-transform: translate(4vh, 84vh);
+          transform: translate(4vh, 84vh);
+}
+
+#prism-effects .left .particle:nth-child(2) {
+  -webkit-transform: translate(3vh, 92vh);
+          transform: translate(3vh, 92vh);
+}
+
+#prism-effects .left .particle:nth-child(3) {
+  -webkit-transform: translate(3vh, 14vh);
+          transform: translate(3vh, 14vh);
+}
+
+#prism-effects .left .particle:nth-child(4) {
+  -webkit-transform: translate(6vh, 83vh);
+          transform: translate(6vh, 83vh);
+}
+
+#prism-effects .left .particle:nth-child(5) {
+  -webkit-transform: translate(6vh, 85vh);
+          transform: translate(6vh, 85vh);
+}
+
+#prism-effects .left .particle:nth-child(6) {
+  -webkit-transform: translate(4vh, 20vh);
+          transform: translate(4vh, 20vh);
+}
+
+#prism-effects .left .particle:nth-child(7) {
+  -webkit-transform: translate(7vh, 28vh);
+          transform: translate(7vh, 28vh);
+}
+
+#prism-effects .left .particle:nth-child(8) {
+  -webkit-transform: translate(3vh, 6vh);
+          transform: translate(3vh, 6vh);
+}
+
+#prism-effects .left .particle:nth-child(9) {
+  -webkit-transform: translate(8vh, 70vh);
+          transform: translate(8vh, 70vh);
+}
+
+#prism-effects .left .particle:nth-child(10) {
+  -webkit-transform: translate(4vh, 25vh);
+          transform: translate(4vh, 25vh);
+}
+
+#prism-effects .left .particle:nth-child(11) {
+  -webkit-transform: translate(3vh, 45vh);
+          transform: translate(3vh, 45vh);
+}
+
+#prism-effects .left .particle:nth-child(12) {
+  -webkit-transform: translate(6vh, 66vh);
+          transform: translate(6vh, 66vh);
+}
+
+#prism-effects .left .particle:nth-child(13) {
+  -webkit-transform: translate(4vh, 73vh);
+          transform: translate(4vh, 73vh);
+}
+
+#prism-effects .left .particle:nth-child(14) {
+  -webkit-transform: translate(2vh, 99vh);
+          transform: translate(2vh, 99vh);
+}
+
+#prism-effects .left .particle:nth-child(15) {
+  -webkit-transform: translate(4vh, 46vh);
+          transform: translate(4vh, 46vh);
+}
+
+#prism-effects .left .particle:nth-child(16) {
+  -webkit-transform: translate(8vh, 22vh);
+          transform: translate(8vh, 22vh);
+}
+
+#prism-effects .left .particle:nth-child(17) {
+  -webkit-transform: translate(9vh, 29vh);
+          transform: translate(9vh, 29vh);
+}
+
+#prism-effects .left .particle:nth-child(18) {
+  -webkit-transform: translate(7vh, 12vh);
+          transform: translate(7vh, 12vh);
+}
+
+#prism-effects .left .particle:nth-child(19) {
+  -webkit-transform: translate(2vh, 90vh);
+          transform: translate(2vh, 90vh);
+}
+
+#prism-effects .left .particle:nth-child(20) {
+  -webkit-transform: translate(2vh, 20vh);
+          transform: translate(2vh, 20vh);
+}
+
+#prism-effects .left .particle:nth-child(21) {
+  -webkit-transform: translate(3vh, 8vh);
+          transform: translate(3vh, 8vh);
+}
+
+#prism-effects .left .particle:nth-child(22) {
+  -webkit-transform: translate(4vh, 80vh);
+          transform: translate(4vh, 80vh);
+}
+
+#prism-effects .left .particle:nth-child(23) {
+  -webkit-transform: translate(8vh, 9vh);
+          transform: translate(8vh, 9vh);
+}
+
+#prism-effects .left .particle:nth-child(24) {
+  -webkit-transform: translate(9vh, 20vh);
+          transform: translate(9vh, 20vh);
+}
+
+#prism-effects .left .particle:nth-child(25) {
+  -webkit-transform: translate(5vh, 77vh);
+          transform: translate(5vh, 77vh);
+}
+
+#prism-effects .left .particle:nth-child(26) {
+  -webkit-transform: translate(9vh, 46vh);
+          transform: translate(9vh, 46vh);
+}
+
+#prism-effects .left .particle:nth-child(27) {
+  -webkit-transform: translate(5vh, 90vh);
+          transform: translate(5vh, 90vh);
+}
+
+#prism-effects .left .particle:nth-child(28) {
+  -webkit-transform: translate(9vh, 42vh);
+          transform: translate(9vh, 42vh);
+}
+
+#prism-effects .left .particle:nth-child(29) {
+  -webkit-transform: translate(5vh, 91vh);
+          transform: translate(5vh, 91vh);
+}
+
+#prism-effects .left .particle:nth-child(30) {
+  -webkit-transform: translate(7vh, 29vh);
+          transform: translate(7vh, 29vh);
+}
+
+#prism-effects .left .particle:nth-child(31) {
+  -webkit-transform: translate(4vh, 28vh);
+          transform: translate(4vh, 28vh);
+}
+
+#prism-effects .left .particle:nth-child(32) {
+  -webkit-transform: translate(1vh, 34vh);
+          transform: translate(1vh, 34vh);
+}
+
+#prism-effects .left .particle:nth-child(33) {
+  -webkit-transform: translate(1vh, 60vh);
+          transform: translate(1vh, 60vh);
+}
+
+#prism-effects .left .particle:nth-child(34) {
+  -webkit-transform: translate(8vh, 16vh);
+          transform: translate(8vh, 16vh);
+}
+
+#prism-effects .left .particle:nth-child(35) {
+  -webkit-transform: translate(4vh, 89vh);
+          transform: translate(4vh, 89vh);
+}
+
+#prism-effects .left .particle:nth-child(36) {
+  -webkit-transform: translate(6vh, 62vh);
+          transform: translate(6vh, 62vh);
+}
+
+#prism-effects .left .particle:nth-child(37) {
+  -webkit-transform: translate(7vh, 97vh);
+          transform: translate(7vh, 97vh);
+}
+
+#prism-effects .left .particle:nth-child(38) {
+  -webkit-transform: translate(9vh, 85vh);
+          transform: translate(9vh, 85vh);
+}
+
+#prism-effects .left .particle:nth-child(39) {
+  -webkit-transform: translate(5vh, 17vh);
+          transform: translate(5vh, 17vh);
+}
+
+#prism-effects .left .particle:nth-child(40) {
+  -webkit-transform: translate(5vh, 10vh);
+          transform: translate(5vh, 10vh);
+}
+
+#prism-effects .left .particle:nth-child(41) {
+  -webkit-transform: translate(3vh, 70vh);
+          transform: translate(3vh, 70vh);
+}
+
+#prism-effects .left .particle:nth-child(42) {
+  -webkit-transform: translate(8vh, 82vh);
+          transform: translate(8vh, 82vh);
+}
+
+#prism-effects .left .particle:nth-child(43) {
+  -webkit-transform: translate(6vh, 99vh);
+          transform: translate(6vh, 99vh);
+}
+
+#prism-effects .left .particle:nth-child(44) {
+  -webkit-transform: translate(1vh, 59vh);
+          transform: translate(1vh, 59vh);
+}
+
+#prism-effects .left .particle:nth-child(45) {
+  -webkit-transform: translate(1vh, 86vh);
+          transform: translate(1vh, 86vh);
+}
+
+#prism-effects .left .particle:nth-child(46) {
+  -webkit-transform: translate(7vh, 28vh);
+          transform: translate(7vh, 28vh);
+}
+
+#prism-effects .left .particle:nth-child(47) {
+  -webkit-transform: translate(3vh, 97vh);
+          transform: translate(3vh, 97vh);
+}
+
+#prism-effects .left .particle:nth-child(48) {
+  -webkit-transform: translate(3vh, 27vh);
+          transform: translate(3vh, 27vh);
+}
+
+#prism-effects .left .particle:nth-child(49) {
+  -webkit-transform: translate(1vh, 1vh);
+          transform: translate(1vh, 1vh);
+}
+
+#prism-effects .left .particle:nth-child(50) {
+  -webkit-transform: translate(1vh, 14vh);
+          transform: translate(1vh, 14vh);
+}
+
+#prism-effects .left .particle:nth-child(51) {
+  -webkit-transform: translate(2vh, 88vh);
+          transform: translate(2vh, 88vh);
+}
+
+#prism-effects .left .particle:nth-child(52) {
+  -webkit-transform: translate(4vh, 39vh);
+          transform: translate(4vh, 39vh);
+}
+
+#prism-effects .left .particle:nth-child(53) {
+  -webkit-transform: translate(8vh, 29vh);
+          transform: translate(8vh, 29vh);
+}
+
+#prism-effects .left .particle:nth-child(54) {
+  -webkit-transform: translate(5vh, 85vh);
+          transform: translate(5vh, 85vh);
+}
+
+#prism-effects .left .particle:nth-child(55) {
+  -webkit-transform: translate(2vh, 95vh);
+          transform: translate(2vh, 95vh);
+}
+
+#prism-effects .left .particle:nth-child(56) {
+  -webkit-transform: translate(1vh, 5vh);
+          transform: translate(1vh, 5vh);
+}
+
+#prism-effects .left .particle:nth-child(57) {
+  -webkit-transform: translate(7vh, 2vh);
+          transform: translate(7vh, 2vh);
+}
+
+#prism-effects .left .particle:nth-child(58) {
+  -webkit-transform: translate(9vh, 47vh);
+          transform: translate(9vh, 47vh);
+}
+
+#prism-effects .left .particle:nth-child(59) {
+  -webkit-transform: translate(9vh, 36vh);
+          transform: translate(9vh, 36vh);
+}
+
+#prism-effects .left .particle:nth-child(60) {
+  -webkit-transform: translate(8vh, 63vh);
+          transform: translate(8vh, 63vh);
+}
+
+#prism-effects .left .particle:nth-child(61) {
+  -webkit-transform: translate(3vh, 74vh);
+          transform: translate(3vh, 74vh);
+}
+
+#prism-effects .left .particle:nth-child(62) {
+  -webkit-transform: translate(2vh, 100vh);
+          transform: translate(2vh, 100vh);
+}
+
+#prism-effects .left .particle:nth-child(63) {
+  -webkit-transform: translate(4vh, 97vh);
+          transform: translate(4vh, 97vh);
+}
+
+#prism-effects .left .particle:nth-child(64) {
+  -webkit-transform: translate(1vh, 9vh);
+          transform: translate(1vh, 9vh);
+}
+
+#prism-effects .left .particle:nth-child(65) {
+  -webkit-transform: translate(9vh, 96vh);
+          transform: translate(9vh, 96vh);
+}
+
+#prism-effects .left .particle:nth-child(66) {
+  -webkit-transform: translate(1vh, 51vh);
+          transform: translate(1vh, 51vh);
+}
+
+#prism-effects .left .particle:nth-child(67) {
+  -webkit-transform: translate(8vh, 26vh);
+          transform: translate(8vh, 26vh);
+}
+
+#prism-effects .left .particle:nth-child(68) {
+  -webkit-transform: translate(2vh, 78vh);
+          transform: translate(2vh, 78vh);
+}
+
+#prism-effects .left .particle:nth-child(69) {
+  -webkit-transform: translate(1vh, 24vh);
+          transform: translate(1vh, 24vh);
+}
+
+#prism-effects .left .particle:nth-child(70) {
+  -webkit-transform: translate(2vh, 15vh);
+          transform: translate(2vh, 15vh);
+}
+
+#prism-effects .left .particle:nth-child(71) {
+  -webkit-transform: translate(2vh, 77vh);
+          transform: translate(2vh, 77vh);
+}
+
+#prism-effects .left .particle:nth-child(72) {
+  -webkit-transform: translate(1vh, 99vh);
+          transform: translate(1vh, 99vh);
+}
+
+#prism-effects .left .particle:nth-child(73) {
+  -webkit-transform: translate(4vh, 13vh);
+          transform: translate(4vh, 13vh);
+}
+
+#prism-effects .left .particle:nth-child(74) {
+  -webkit-transform: translate(7vh, 48vh);
+          transform: translate(7vh, 48vh);
+}
+
+#prism-effects .left .particle:nth-child(75) {
+  -webkit-transform: translate(6vh, 44vh);
+          transform: translate(6vh, 44vh);
+}
+
+#prism-effects .left .particle:nth-child(76) {
+  -webkit-transform: translate(2vh, 59vh);
+          transform: translate(2vh, 59vh);
+}
+
+#prism-effects .left .particle:nth-child(77) {
+  -webkit-transform: translate(1vh, 12vh);
+          transform: translate(1vh, 12vh);
+}
+
+#prism-effects .left .particle:nth-child(78) {
+  -webkit-transform: translate(4vh, 58vh);
+          transform: translate(4vh, 58vh);
+}
+
+#prism-effects .left .particle:nth-child(79) {
+  -webkit-transform: translate(4vh, 53vh);
+          transform: translate(4vh, 53vh);
+}
+
+#prism-effects .left .particle:nth-child(80) {
+  -webkit-transform: translate(8vh, 73vh);
+          transform: translate(8vh, 73vh);
+}
+
+#prism-effects .left .particle:nth-child(81) {
+  -webkit-transform: translate(2vh, 43vh);
+          transform: translate(2vh, 43vh);
+}
+
+#prism-effects .left .particle:nth-child(82) {
+  -webkit-transform: translate(7vh, 29vh);
+          transform: translate(7vh, 29vh);
+}
+
+#prism-effects .left .particle:nth-child(83) {
+  -webkit-transform: translate(1vh, 41vh);
+          transform: translate(1vh, 41vh);
+}
+
+#prism-effects .left .particle:nth-child(84) {
+  -webkit-transform: translate(3vh, 72vh);
+          transform: translate(3vh, 72vh);
+}
+
+#prism-effects .left .particle:nth-child(85) {
+  -webkit-transform: translate(6vh, 69vh);
+          transform: translate(6vh, 69vh);
+}
+
+#prism-effects .left .particle:nth-child(86) {
+  -webkit-transform: translate(3vh, 44vh);
+          transform: translate(3vh, 44vh);
+}
+
+#prism-effects .left .particle:nth-child(87) {
+  -webkit-transform: translate(9vh, 5vh);
+          transform: translate(9vh, 5vh);
+}
+
+#prism-effects .left .particle:nth-child(88) {
+  -webkit-transform: translate(7vh, 64vh);
+          transform: translate(7vh, 64vh);
+}
+
+#prism-effects .left .particle:nth-child(89) {
+  -webkit-transform: translate(7vh, 49vh);
+          transform: translate(7vh, 49vh);
+}
+
+#prism-effects .left .particle:nth-child(90) {
+  -webkit-transform: translate(2vh, 27vh);
+          transform: translate(2vh, 27vh);
+}
+
+#prism-effects .left .particle:nth-child(91) {
+  -webkit-transform: translate(6vh, 22vh);
+          transform: translate(6vh, 22vh);
+}
+
+#prism-effects .left .particle:nth-child(92) {
+  -webkit-transform: translate(5vh, 98vh);
+          transform: translate(5vh, 98vh);
+}
+
+#prism-effects .left .particle:nth-child(93) {
+  -webkit-transform: translate(7vh, 68vh);
+          transform: translate(7vh, 68vh);
+}
+
+#prism-effects .left .particle:nth-child(94) {
+  -webkit-transform: translate(5vh, 42vh);
+          transform: translate(5vh, 42vh);
+}
+
+#prism-effects .left .particle:nth-child(95) {
+  -webkit-transform: translate(8vh, 12vh);
+          transform: translate(8vh, 12vh);
+}
+
+#prism-effects .left .particle:nth-child(96) {
+  -webkit-transform: translate(2vh, 98vh);
+          transform: translate(2vh, 98vh);
+}
+
+#prism-effects .left .particle:nth-child(97) {
+  -webkit-transform: translate(8vh, 68vh);
+          transform: translate(8vh, 68vh);
+}
+
+#prism-effects .left .particle:nth-child(98) {
+  -webkit-transform: translate(5vh, 40vh);
+          transform: translate(5vh, 40vh);
+}
+
+#prism-effects .left .particle:nth-child(99) {
+  -webkit-transform: translate(3vh, 19vh);
+          transform: translate(3vh, 19vh);
+}
+
+#prism-effects .left .particle:nth-child(100) {
+  -webkit-transform: translate(9vh, 96vh);
+          transform: translate(9vh, 96vh);
+}
+
+#prism-effects .right {
+  right: 0;
+}
+
+#prism-effects .right .particle:nth-child(1) {
+  -webkit-transform: translate(4vh, 15vh);
+          transform: translate(4vh, 15vh);
+}
+
+#prism-effects .right .particle:nth-child(2) {
+  -webkit-transform: translate(4vh, 87vh);
+          transform: translate(4vh, 87vh);
+}
+
+#prism-effects .right .particle:nth-child(3) {
+  -webkit-transform: translate(8vh, 58vh);
+          transform: translate(8vh, 58vh);
+}
+
+#prism-effects .right .particle:nth-child(4) {
+  -webkit-transform: translate(2vh, 14vh);
+          transform: translate(2vh, 14vh);
+}
+
+#prism-effects .right .particle:nth-child(5) {
+  -webkit-transform: translate(8vh, 27vh);
+          transform: translate(8vh, 27vh);
+}
+
+#prism-effects .right .particle:nth-child(6) {
+  -webkit-transform: translate(1vh, 34vh);
+          transform: translate(1vh, 34vh);
+}
+
+#prism-effects .right .particle:nth-child(7) {
+  -webkit-transform: translate(2vh, 6vh);
+          transform: translate(2vh, 6vh);
+}
+
+#prism-effects .right .particle:nth-child(8) {
+  -webkit-transform: translate(4vh, 9vh);
+          transform: translate(4vh, 9vh);
+}
+
+#prism-effects .right .particle:nth-child(9) {
+  -webkit-transform: translate(5vh, 55vh);
+          transform: translate(5vh, 55vh);
+}
+
+#prism-effects .right .particle:nth-child(10) {
+  -webkit-transform: translate(7vh, 54vh);
+          transform: translate(7vh, 54vh);
+}
+
+#prism-effects .right .particle:nth-child(11) {
+  -webkit-transform: translate(5vh, 87vh);
+          transform: translate(5vh, 87vh);
+}
+
+#prism-effects .right .particle:nth-child(12) {
+  -webkit-transform: translate(5vh, 16vh);
+          transform: translate(5vh, 16vh);
+}
+
+#prism-effects .right .particle:nth-child(13) {
+  -webkit-transform: translate(6vh, 84vh);
+          transform: translate(6vh, 84vh);
+}
+
+#prism-effects .right .particle:nth-child(14) {
+  -webkit-transform: translate(2vh, 83vh);
+          transform: translate(2vh, 83vh);
+}
+
+#prism-effects .right .particle:nth-child(15) {
+  -webkit-transform: translate(5vh, 86vh);
+          transform: translate(5vh, 86vh);
+}
+
+#prism-effects .right .particle:nth-child(16) {
+  -webkit-transform: translate(9vh, 70vh);
+          transform: translate(9vh, 70vh);
+}
+
+#prism-effects .right .particle:nth-child(17) {
+  -webkit-transform: translate(3vh, 82vh);
+          transform: translate(3vh, 82vh);
+}
+
+#prism-effects .right .particle:nth-child(18) {
+  -webkit-transform: translate(1vh, 29vh);
+          transform: translate(1vh, 29vh);
+}
+
+#prism-effects .right .particle:nth-child(19) {
+  -webkit-transform: translate(9vh, 87vh);
+          transform: translate(9vh, 87vh);
+}
+
+#prism-effects .right .particle:nth-child(20) {
+  -webkit-transform: translate(1vh, 63vh);
+          transform: translate(1vh, 63vh);
+}
+
+#prism-effects .right .particle:nth-child(21) {
+  -webkit-transform: translate(7vh, 47vh);
+          transform: translate(7vh, 47vh);
+}
+
+#prism-effects .right .particle:nth-child(22) {
+  -webkit-transform: translate(6vh, 56vh);
+          transform: translate(6vh, 56vh);
+}
+
+#prism-effects .right .particle:nth-child(23) {
+  -webkit-transform: translate(3vh, 53vh);
+          transform: translate(3vh, 53vh);
+}
+
+#prism-effects .right .particle:nth-child(24) {
+  -webkit-transform: translate(8vh, 82vh);
+          transform: translate(8vh, 82vh);
+}
+
+#prism-effects .right .particle:nth-child(25) {
+  -webkit-transform: translate(5vh, 16vh);
+          transform: translate(5vh, 16vh);
+}
+
+#prism-effects .right .particle:nth-child(26) {
+  -webkit-transform: translate(2vh, 42vh);
+          transform: translate(2vh, 42vh);
+}
+
+#prism-effects .right .particle:nth-child(27) {
+  -webkit-transform: translate(2vh, 58vh);
+          transform: translate(2vh, 58vh);
+}
+
+#prism-effects .right .particle:nth-child(28) {
+  -webkit-transform: translate(2vh, 24vh);
+          transform: translate(2vh, 24vh);
+}
+
+#prism-effects .right .particle:nth-child(29) {
+  -webkit-transform: translate(9vh, 88vh);
+          transform: translate(9vh, 88vh);
+}
+
+#prism-effects .right .particle:nth-child(30) {
+  -webkit-transform: translate(2vh, 47vh);
+          transform: translate(2vh, 47vh);
+}
+
+#prism-effects .right .particle:nth-child(31) {
+  -webkit-transform: translate(7vh, 22vh);
+          transform: translate(7vh, 22vh);
+}
+
+#prism-effects .right .particle:nth-child(32) {
+  -webkit-transform: translate(1vh, 50vh);
+          transform: translate(1vh, 50vh);
+}
+
+#prism-effects .right .particle:nth-child(33) {
+  -webkit-transform: translate(8vh, 7vh);
+          transform: translate(8vh, 7vh);
+}
+
+#prism-effects .right .particle:nth-child(34) {
+  -webkit-transform: translate(6vh, 95vh);
+          transform: translate(6vh, 95vh);
+}
+
+#prism-effects .right .particle:nth-child(35) {
+  -webkit-transform: translate(6vh, 26vh);
+          transform: translate(6vh, 26vh);
+}
+
+#prism-effects .right .particle:nth-child(36) {
+  -webkit-transform: translate(5vh, 22vh);
+          transform: translate(5vh, 22vh);
+}
+
+#prism-effects .right .particle:nth-child(37) {
+  -webkit-transform: translate(9vh, 25vh);
+          transform: translate(9vh, 25vh);
+}
+
+#prism-effects .right .particle:nth-child(38) {
+  -webkit-transform: translate(1vh, 76vh);
+          transform: translate(1vh, 76vh);
+}
+
+#prism-effects .right .particle:nth-child(39) {
+  -webkit-transform: translate(5vh, 3vh);
+          transform: translate(5vh, 3vh);
+}
+
+#prism-effects .right .particle:nth-child(40) {
+  -webkit-transform: translate(8vh, 85vh);
+          transform: translate(8vh, 85vh);
+}
+
+#prism-effects .right .particle:nth-child(41) {
+  -webkit-transform: translate(5vh, 39vh);
+          transform: translate(5vh, 39vh);
+}
+
+#prism-effects .right .particle:nth-child(42) {
+  -webkit-transform: translate(7vh, 44vh);
+          transform: translate(7vh, 44vh);
+}
+
+#prism-effects .right .particle:nth-child(43) {
+  -webkit-transform: translate(8vh, 52vh);
+          transform: translate(8vh, 52vh);
+}
+
+#prism-effects .right .particle:nth-child(44) {
+  -webkit-transform: translate(9vh, 48vh);
+          transform: translate(9vh, 48vh);
+}
+
+#prism-effects .right .particle:nth-child(45) {
+  -webkit-transform: translate(4vh, 80vh);
+          transform: translate(4vh, 80vh);
+}
+
+#prism-effects .right .particle:nth-child(46) {
+  -webkit-transform: translate(1vh, 35vh);
+          transform: translate(1vh, 35vh);
+}
+
+#prism-effects .right .particle:nth-child(47) {
+  -webkit-transform: translate(6vh, 10vh);
+          transform: translate(6vh, 10vh);
+}
+
+#prism-effects .right .particle:nth-child(48) {
+  -webkit-transform: translate(5vh, 57vh);
+          transform: translate(5vh, 57vh);
+}
+
+#prism-effects .right .particle:nth-child(49) {
+  -webkit-transform: translate(4vh, 60vh);
+          transform: translate(4vh, 60vh);
+}
+
+#prism-effects .right .particle:nth-child(50) {
+  -webkit-transform: translate(5vh, 33vh);
+          transform: translate(5vh, 33vh);
+}
+
+#prism-effects .right .particle:nth-child(51) {
+  -webkit-transform: translate(8vh, 61vh);
+          transform: translate(8vh, 61vh);
+}
+
+#prism-effects .right .particle:nth-child(52) {
+  -webkit-transform: translate(9vh, 48vh);
+          transform: translate(9vh, 48vh);
+}
+
+#prism-effects .right .particle:nth-child(53) {
+  -webkit-transform: translate(4vh, 17vh);
+          transform: translate(4vh, 17vh);
+}
+
+#prism-effects .right .particle:nth-child(54) {
+  -webkit-transform: translate(7vh, 73vh);
+          transform: translate(7vh, 73vh);
+}
+
+#prism-effects .right .particle:nth-child(55) {
+  -webkit-transform: translate(2vh, 27vh);
+          transform: translate(2vh, 27vh);
+}
+
+#prism-effects .right .particle:nth-child(56) {
+  -webkit-transform: translate(5vh, 15vh);
+          transform: translate(5vh, 15vh);
+}
+
+#prism-effects .right .particle:nth-child(57) {
+  -webkit-transform: translate(3vh, 57vh);
+          transform: translate(3vh, 57vh);
+}
+
+#prism-effects .right .particle:nth-child(58) {
+  -webkit-transform: translate(4vh, 85vh);
+          transform: translate(4vh, 85vh);
+}
+
+#prism-effects .right .particle:nth-child(59) {
+  -webkit-transform: translate(1vh, 95vh);
+          transform: translate(1vh, 95vh);
+}
+
+#prism-effects .right .particle:nth-child(60) {
+  -webkit-transform: translate(4vh, 37vh);
+          transform: translate(4vh, 37vh);
+}
+
+#prism-effects .right .particle:nth-child(61) {
+  -webkit-transform: translate(5vh, 81vh);
+          transform: translate(5vh, 81vh);
+}
+
+#prism-effects .right .particle:nth-child(62) {
+  -webkit-transform: translate(6vh, 22vh);
+          transform: translate(6vh, 22vh);
+}
+
+#prism-effects .right .particle:nth-child(63) {
+  -webkit-transform: translate(1vh, 21vh);
+          transform: translate(1vh, 21vh);
+}
+
+#prism-effects .right .particle:nth-child(64) {
+  -webkit-transform: translate(4vh, 45vh);
+          transform: translate(4vh, 45vh);
+}
+
+#prism-effects .right .particle:nth-child(65) {
+  -webkit-transform: translate(8vh, 37vh);
+          transform: translate(8vh, 37vh);
+}
+
+#prism-effects .right .particle:nth-child(66) {
+  -webkit-transform: translate(6vh, 75vh);
+          transform: translate(6vh, 75vh);
+}
+
+#prism-effects .right .particle:nth-child(67) {
+  -webkit-transform: translate(1vh, 71vh);
+          transform: translate(1vh, 71vh);
+}
+
+#prism-effects .right .particle:nth-child(68) {
+  -webkit-transform: translate(6vh, 7vh);
+          transform: translate(6vh, 7vh);
+}
+
+#prism-effects .right .particle:nth-child(69) {
+  -webkit-transform: translate(6vh, 24vh);
+          transform: translate(6vh, 24vh);
+}
+
+#prism-effects .right .particle:nth-child(70) {
+  -webkit-transform: translate(9vh, 82vh);
+          transform: translate(9vh, 82vh);
+}
+
+#prism-effects .right .particle:nth-child(71) {
+  -webkit-transform: translate(8vh, 78vh);
+          transform: translate(8vh, 78vh);
+}
+
+#prism-effects .right .particle:nth-child(72) {
+  -webkit-transform: translate(1vh, 56vh);
+          transform: translate(1vh, 56vh);
+}
+
+#prism-effects .right .particle:nth-child(73) {
+  -webkit-transform: translate(8vh, 84vh);
+          transform: translate(8vh, 84vh);
+}
+
+#prism-effects .right .particle:nth-child(74) {
+  -webkit-transform: translate(2vh, 89vh);
+          transform: translate(2vh, 89vh);
+}
+
+#prism-effects .right .particle:nth-child(75) {
+  -webkit-transform: translate(2vh, 96vh);
+          transform: translate(2vh, 96vh);
+}
+
+#prism-effects .right .particle:nth-child(76) {
+  -webkit-transform: translate(9vh, 47vh);
+          transform: translate(9vh, 47vh);
+}
+
+#prism-effects .right .particle:nth-child(77) {
+  -webkit-transform: translate(6vh, 5vh);
+          transform: translate(6vh, 5vh);
+}
+
+#prism-effects .right .particle:nth-child(78) {
+  -webkit-transform: translate(5vh, 43vh);
+          transform: translate(5vh, 43vh);
+}
+
+#prism-effects .right .particle:nth-child(79) {
+  -webkit-transform: translate(3vh, 7vh);
+          transform: translate(3vh, 7vh);
+}
+
+#prism-effects .right .particle:nth-child(80) {
+  -webkit-transform: translate(2vh, 17vh);
+          transform: translate(2vh, 17vh);
+}
+
+#prism-effects .right .particle:nth-child(81) {
+  -webkit-transform: translate(4vh, 15vh);
+          transform: translate(4vh, 15vh);
+}
+
+#prism-effects .right .particle:nth-child(82) {
+  -webkit-transform: translate(8vh, 34vh);
+          transform: translate(8vh, 34vh);
+}
+
+#prism-effects .right .particle:nth-child(83) {
+  -webkit-transform: translate(2vh, 71vh);
+          transform: translate(2vh, 71vh);
+}
+
+#prism-effects .right .particle:nth-child(84) {
+  -webkit-transform: translate(3vh, 11vh);
+          transform: translate(3vh, 11vh);
+}
+
+#prism-effects .right .particle:nth-child(85) {
+  -webkit-transform: translate(4vh, 30vh);
+          transform: translate(4vh, 30vh);
+}
+
+#prism-effects .right .particle:nth-child(86) {
+  -webkit-transform: translate(3vh, 100vh);
+          transform: translate(3vh, 100vh);
+}
+
+#prism-effects .right .particle:nth-child(87) {
+  -webkit-transform: translate(2vh, 100vh);
+          transform: translate(2vh, 100vh);
+}
+
+#prism-effects .right .particle:nth-child(88) {
+  -webkit-transform: translate(4vh, 82vh);
+          transform: translate(4vh, 82vh);
+}
+
+#prism-effects .right .particle:nth-child(89) {
+  -webkit-transform: translate(6vh, 17vh);
+          transform: translate(6vh, 17vh);
+}
+
+#prism-effects .right .particle:nth-child(90) {
+  -webkit-transform: translate(8vh, 80vh);
+          transform: translate(8vh, 80vh);
+}
+
+#prism-effects .right .particle:nth-child(91) {
+  -webkit-transform: translate(3vh, 41vh);
+          transform: translate(3vh, 41vh);
+}
+
+#prism-effects .right .particle:nth-child(92) {
+  -webkit-transform: translate(6vh, 2vh);
+          transform: translate(6vh, 2vh);
+}
+
+#prism-effects .right .particle:nth-child(93) {
+  -webkit-transform: translate(2vh, 31vh);
+          transform: translate(2vh, 31vh);
+}
+
+#prism-effects .right .particle:nth-child(94) {
+  -webkit-transform: translate(1vh, 72vh);
+          transform: translate(1vh, 72vh);
+}
+
+#prism-effects .right .particle:nth-child(95) {
+  -webkit-transform: translate(7vh, 99vh);
+          transform: translate(7vh, 99vh);
+}
+
+#prism-effects .right .particle:nth-child(96) {
+  -webkit-transform: translate(9vh, 76vh);
+          transform: translate(9vh, 76vh);
+}
+
+#prism-effects .right .particle:nth-child(97) {
+  -webkit-transform: translate(2vh, 35vh);
+          transform: translate(2vh, 35vh);
+}
+
+#prism-effects .right .particle:nth-child(98) {
+  -webkit-transform: translate(8vh, 59vh);
+          transform: translate(8vh, 59vh);
+}
+
+#prism-effects .right .particle:nth-child(99) {
+  -webkit-transform: translate(6vh, 91vh);
+          transform: translate(6vh, 91vh);
+}
+
+#prism-effects .right .particle:nth-child(100) {
+  -webkit-transform: translate(8vh, 10vh);
+          transform: translate(8vh, 10vh);
+}
+
+#prism-effects .top {
+  top: 0;
+}
+
+#prism-effects .top .particle:nth-child(1) {
+  -webkit-transform: translate(21vw, 1vh);
+          transform: translate(21vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(2) {
+  -webkit-transform: translate(10vw, 6vh);
+          transform: translate(10vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(3) {
+  -webkit-transform: translate(11vw, 2vh);
+          transform: translate(11vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(4) {
+  -webkit-transform: translate(76vw, 5vh);
+          transform: translate(76vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(5) {
+  -webkit-transform: translate(69vw, 8vh);
+          transform: translate(69vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(6) {
+  -webkit-transform: translate(18vw, 4vh);
+          transform: translate(18vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(7) {
+  -webkit-transform: translate(27vw, 5vh);
+          transform: translate(27vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(8) {
+  -webkit-transform: translate(7vw, 3vh);
+          transform: translate(7vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(9) {
+  -webkit-transform: translate(53vw, 7vh);
+          transform: translate(53vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(10) {
+  -webkit-transform: translate(16vw, 6vh);
+          transform: translate(16vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(11) {
+  -webkit-transform: translate(10vw, 8vh);
+          transform: translate(10vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(12) {
+  -webkit-transform: translate(54vw, 6vh);
+          transform: translate(54vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(13) {
+  -webkit-transform: translate(18vw, 2vh);
+          transform: translate(18vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(14) {
+  -webkit-transform: translate(95vw, 4vh);
+          transform: translate(95vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(15) {
+  -webkit-transform: translate(81vw, 8vh);
+          transform: translate(81vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(16) {
+  -webkit-transform: translate(32vw, 8vh);
+          transform: translate(32vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(17) {
+  -webkit-transform: translate(77vw, 8vh);
+          transform: translate(77vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(18) {
+  -webkit-transform: translate(93vw, 5vh);
+          transform: translate(93vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(19) {
+  -webkit-transform: translate(34vw, 7vh);
+          transform: translate(34vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(20) {
+  -webkit-transform: translate(55vw, 1vh);
+          transform: translate(55vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(21) {
+  -webkit-transform: translate(55vw, 6vh);
+          transform: translate(55vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(22) {
+  -webkit-transform: translate(41vw, 6vh);
+          transform: translate(41vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(23) {
+  -webkit-transform: translate(21vw, 4vh);
+          transform: translate(21vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(24) {
+  -webkit-transform: translate(21vw, 8vh);
+          transform: translate(21vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(25) {
+  -webkit-transform: translate(52vw, 1vh);
+          transform: translate(52vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(26) {
+  -webkit-transform: translate(27vw, 6vh);
+          transform: translate(27vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(27) {
+  -webkit-transform: translate(15vw, 7vh);
+          transform: translate(15vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(28) {
+  -webkit-transform: translate(91vw, 2vh);
+          transform: translate(91vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(29) {
+  -webkit-transform: translate(57vw, 1vh);
+          transform: translate(57vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(30) {
+  -webkit-transform: translate(75vw, 8vh);
+          transform: translate(75vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(31) {
+  -webkit-transform: translate(61vw, 4vh);
+          transform: translate(61vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(32) {
+  -webkit-transform: translate(44vw, 5vh);
+          transform: translate(44vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(33) {
+  -webkit-transform: translate(38vw, 5vh);
+          transform: translate(38vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(34) {
+  -webkit-transform: translate(6vw, 3vh);
+          transform: translate(6vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(35) {
+  -webkit-transform: translate(38vw, 3vh);
+          transform: translate(38vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(36) {
+  -webkit-transform: translate(85vw, 8vh);
+          transform: translate(85vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(37) {
+  -webkit-transform: translate(60vw, 1vh);
+          transform: translate(60vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(38) {
+  -webkit-transform: translate(43vw, 5vh);
+          transform: translate(43vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(39) {
+  -webkit-transform: translate(32vw, 3vh);
+          transform: translate(32vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(40) {
+  -webkit-transform: translate(88vw, 9vh);
+          transform: translate(88vw, 9vh);
+}
+
+#prism-effects .top .particle:nth-child(41) {
+  -webkit-transform: translate(12vw, 7vh);
+          transform: translate(12vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(42) {
+  -webkit-transform: translate(49vw, 7vh);
+          transform: translate(49vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(43) {
+  -webkit-transform: translate(44vw, 7vh);
+          transform: translate(44vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(44) {
+  -webkit-transform: translate(43vw, 7vh);
+          transform: translate(43vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(45) {
+  -webkit-transform: translate(67vw, 1vh);
+          transform: translate(67vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(46) {
+  -webkit-transform: translate(60vw, 9vh);
+          transform: translate(60vw, 9vh);
+}
+
+#prism-effects .top .particle:nth-child(47) {
+  -webkit-transform: translate(54vw, 7vh);
+          transform: translate(54vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(48) {
+  -webkit-transform: translate(72vw, 6vh);
+          transform: translate(72vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(49) {
+  -webkit-transform: translate(75vw, 6vh);
+          transform: translate(75vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(50) {
+  -webkit-transform: translate(73vw, 6vh);
+          transform: translate(73vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(51) {
+  -webkit-transform: translate(39vw, 2vh);
+          transform: translate(39vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(52) {
+  -webkit-transform: translate(48vw, 6vh);
+          transform: translate(48vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(53) {
+  -webkit-transform: translate(71vw, 7vh);
+          transform: translate(71vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(54) {
+  -webkit-transform: translate(18vw, 3vh);
+          transform: translate(18vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(55) {
+  -webkit-transform: translate(57vw, 3vh);
+          transform: translate(57vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(56) {
+  -webkit-transform: translate(26vw, 4vh);
+          transform: translate(26vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(57) {
+  -webkit-transform: translate(8vw, 2vh);
+          transform: translate(8vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(58) {
+  -webkit-transform: translate(32vw, 2vh);
+          transform: translate(32vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(59) {
+  -webkit-transform: translate(62vw, 7vh);
+          transform: translate(62vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(60) {
+  -webkit-transform: translate(41vw, 6vh);
+          transform: translate(41vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(61) {
+  -webkit-transform: translate(39vw, 2vh);
+          transform: translate(39vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(62) {
+  -webkit-transform: translate(22vw, 9vh);
+          transform: translate(22vw, 9vh);
+}
+
+#prism-effects .top .particle:nth-child(63) {
+  -webkit-transform: translate(83vw, 3vh);
+          transform: translate(83vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(64) {
+  -webkit-transform: translate(75vw, 8vh);
+          transform: translate(75vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(65) {
+  -webkit-transform: translate(65vw, 7vh);
+          transform: translate(65vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(66) {
+  -webkit-transform: translate(27vw, 7vh);
+          transform: translate(27vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(67) {
+  -webkit-transform: translate(28vw, 3vh);
+          transform: translate(28vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(68) {
+  -webkit-transform: translate(6vw, 4vh);
+          transform: translate(6vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(69) {
+  -webkit-transform: translate(10vw, 2vh);
+          transform: translate(10vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(70) {
+  -webkit-transform: translate(22vw, 1vh);
+          transform: translate(22vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(71) {
+  -webkit-transform: translate(40vw, 6vh);
+          transform: translate(40vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(72) {
+  -webkit-transform: translate(64vw, 7vh);
+          transform: translate(64vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(73) {
+  -webkit-transform: translate(29vw, 1vh);
+          transform: translate(29vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(74) {
+  -webkit-transform: translate(19vw, 9vh);
+          transform: translate(19vw, 9vh);
+}
+
+#prism-effects .top .particle:nth-child(75) {
+  -webkit-transform: translate(39vw, 6vh);
+          transform: translate(39vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(76) {
+  -webkit-transform: translate(23vw, 4vh);
+          transform: translate(23vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(77) {
+  -webkit-transform: translate(9vw, 3vh);
+          transform: translate(9vw, 3vh);
+}
+
+#prism-effects .top .particle:nth-child(78) {
+  -webkit-transform: translate(51vw, 7vh);
+          transform: translate(51vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(79) {
+  -webkit-transform: translate(92vw, 4vh);
+          transform: translate(92vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(80) {
+  -webkit-transform: translate(69vw, 4vh);
+          transform: translate(69vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(81) {
+  -webkit-transform: translate(59vw, 1vh);
+          transform: translate(59vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(82) {
+  -webkit-transform: translate(12vw, 1vh);
+          transform: translate(12vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(83) {
+  -webkit-transform: translate(60vw, 8vh);
+          transform: translate(60vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(84) {
+  -webkit-transform: translate(56vw, 7vh);
+          transform: translate(56vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(85) {
+  -webkit-transform: translate(95vw, 2vh);
+          transform: translate(95vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(86) {
+  -webkit-transform: translate(12vw, 1vh);
+          transform: translate(12vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(87) {
+  -webkit-transform: translate(75vw, 8vh);
+          transform: translate(75vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(88) {
+  -webkit-transform: translate(45vw, 4vh);
+          transform: translate(45vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(89) {
+  -webkit-transform: translate(30vw, 8vh);
+          transform: translate(30vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(90) {
+  -webkit-transform: translate(39vw, 5vh);
+          transform: translate(39vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(91) {
+  -webkit-transform: translate(58vw, 7vh);
+          transform: translate(58vw, 7vh);
+}
+
+#prism-effects .top .particle:nth-child(92) {
+  -webkit-transform: translate(9vw, 4vh);
+          transform: translate(9vw, 4vh);
+}
+
+#prism-effects .top .particle:nth-child(93) {
+  -webkit-transform: translate(44vw, 6vh);
+          transform: translate(44vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(94) {
+  -webkit-transform: translate(80vw, 1vh);
+          transform: translate(80vw, 1vh);
+}
+
+#prism-effects .top .particle:nth-child(95) {
+  -webkit-transform: translate(25vw, 2vh);
+          transform: translate(25vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(96) {
+  -webkit-transform: translate(22vw, 6vh);
+          transform: translate(22vw, 6vh);
+}
+
+#prism-effects .top .particle:nth-child(97) {
+  -webkit-transform: translate(62vw, 2vh);
+          transform: translate(62vw, 2vh);
+}
+
+#prism-effects .top .particle:nth-child(98) {
+  -webkit-transform: translate(73vw, 8vh);
+          transform: translate(73vw, 8vh);
+}
+
+#prism-effects .top .particle:nth-child(99) {
+  -webkit-transform: translate(54vw, 5vh);
+          transform: translate(54vw, 5vh);
+}
+
+#prism-effects .top .particle:nth-child(100) {
+  -webkit-transform: translate(39vw, 3vh);
+          transform: translate(39vw, 3vh);
+}
+
+#prism-effects .bottom {
+  bottom: 0;
+}
+
+#prism-effects .bottom .particle:nth-child(1) {
+  -webkit-transform: translate(59vw, 9vh);
+          transform: translate(59vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(2) {
+  -webkit-transform: translate(51vw, 4vh);
+          transform: translate(51vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(3) {
+  -webkit-transform: translate(83vw, 4vh);
+          transform: translate(83vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(4) {
+  -webkit-transform: translate(25vw, 8vh);
+          transform: translate(25vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(5) {
+  -webkit-transform: translate(47vw, 4vh);
+          transform: translate(47vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(6) {
+  -webkit-transform: translate(25vw, 8vh);
+          transform: translate(25vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(7) {
+  -webkit-transform: translate(43vw, 9vh);
+          transform: translate(43vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(8) {
+  -webkit-transform: translate(79vw, 2vh);
+          transform: translate(79vw, 2vh);
+}
+
+#prism-effects .bottom .particle:nth-child(9) {
+  -webkit-transform: translate(49vw, 3vh);
+          transform: translate(49vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(10) {
+  -webkit-transform: translate(70vw, 3vh);
+          transform: translate(70vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(11) {
+  -webkit-transform: translate(17vw, 4vh);
+          transform: translate(17vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(12) {
+  -webkit-transform: translate(27vw, 3vh);
+          transform: translate(27vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(13) {
+  -webkit-transform: translate(93vw, 3vh);
+          transform: translate(93vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(14) {
+  -webkit-transform: translate(10vw, 1vh);
+          transform: translate(10vw, 1vh);
+}
+
+#prism-effects .bottom .particle:nth-child(15) {
+  -webkit-transform: translate(20vw, 8vh);
+          transform: translate(20vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(16) {
+  -webkit-transform: translate(17vw, 8vh);
+          transform: translate(17vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(17) {
+  -webkit-transform: translate(93vw, 6vh);
+          transform: translate(93vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(18) {
+  -webkit-transform: translate(78vw, 7vh);
+          transform: translate(78vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(19) {
+  -webkit-transform: translate(38vw, 8vh);
+          transform: translate(38vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(20) {
+  -webkit-transform: translate(91vw, 6vh);
+          transform: translate(91vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(21) {
+  -webkit-transform: translate(9vw, 5vh);
+          transform: translate(9vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(22) {
+  -webkit-transform: translate(23vw, 6vh);
+          transform: translate(23vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(23) {
+  -webkit-transform: translate(87vw, 7vh);
+          transform: translate(87vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(24) {
+  -webkit-transform: translate(78vw, 7vh);
+          transform: translate(78vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(25) {
+  -webkit-transform: translate(72vw, 1vh);
+          transform: translate(72vw, 1vh);
+}
+
+#prism-effects .bottom .particle:nth-child(26) {
+  -webkit-transform: translate(31vw, 3vh);
+          transform: translate(31vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(27) {
+  -webkit-transform: translate(10vw, 9vh);
+          transform: translate(10vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(28) {
+  -webkit-transform: translate(69vw, 6vh);
+          transform: translate(69vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(29) {
+  -webkit-transform: translate(17vw, 3vh);
+          transform: translate(17vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(30) {
+  -webkit-transform: translate(46vw, 2vh);
+          transform: translate(46vw, 2vh);
+}
+
+#prism-effects .bottom .particle:nth-child(31) {
+  -webkit-transform: translate(61vw, 4vh);
+          transform: translate(61vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(32) {
+  -webkit-transform: translate(12vw, 5vh);
+          transform: translate(12vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(33) {
+  -webkit-transform: translate(14vw, 3vh);
+          transform: translate(14vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(34) {
+  -webkit-transform: translate(36vw, 6vh);
+          transform: translate(36vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(35) {
+  -webkit-transform: translate(62vw, 6vh);
+          transform: translate(62vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(36) {
+  -webkit-transform: translate(16vw, 9vh);
+          transform: translate(16vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(37) {
+  -webkit-transform: translate(18vw, 6vh);
+          transform: translate(18vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(38) {
+  -webkit-transform: translate(53vw, 9vh);
+          transform: translate(53vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(39) {
+  -webkit-transform: translate(6vw, 4vh);
+          transform: translate(6vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(40) {
+  -webkit-transform: translate(50vw, 1vh);
+          transform: translate(50vw, 1vh);
+}
+
+#prism-effects .bottom .particle:nth-child(41) {
+  -webkit-transform: translate(40vw, 4vh);
+          transform: translate(40vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(42) {
+  -webkit-transform: translate(92vw, 6vh);
+          transform: translate(92vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(43) {
+  -webkit-transform: translate(90vw, 8vh);
+          transform: translate(90vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(44) {
+  -webkit-transform: translate(34vw, 8vh);
+          transform: translate(34vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(45) {
+  -webkit-transform: translate(49vw, 6vh);
+          transform: translate(49vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(46) {
+  -webkit-transform: translate(90vw, 6vh);
+          transform: translate(90vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(47) {
+  -webkit-transform: translate(62vw, 6vh);
+          transform: translate(62vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(48) {
+  -webkit-transform: translate(43vw, 9vh);
+          transform: translate(43vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(49) {
+  -webkit-transform: translate(32vw, 7vh);
+          transform: translate(32vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(50) {
+  -webkit-transform: translate(55vw, 2vh);
+          transform: translate(55vw, 2vh);
+}
+
+#prism-effects .bottom .particle:nth-child(51) {
+  -webkit-transform: translate(53vw, 4vh);
+          transform: translate(53vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(52) {
+  -webkit-transform: translate(94vw, 7vh);
+          transform: translate(94vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(53) {
+  -webkit-transform: translate(28vw, 5vh);
+          transform: translate(28vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(54) {
+  -webkit-transform: translate(38vw, 8vh);
+          transform: translate(38vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(55) {
+  -webkit-transform: translate(40vw, 6vh);
+          transform: translate(40vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(56) {
+  -webkit-transform: translate(29vw, 6vh);
+          transform: translate(29vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(57) {
+  -webkit-transform: translate(58vw, 3vh);
+          transform: translate(58vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(58) {
+  -webkit-transform: translate(51vw, 3vh);
+          transform: translate(51vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(59) {
+  -webkit-transform: translate(77vw, 4vh);
+          transform: translate(77vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(60) {
+  -webkit-transform: translate(74vw, 3vh);
+          transform: translate(74vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(61) {
+  -webkit-transform: translate(84vw, 4vh);
+          transform: translate(84vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(62) {
+  -webkit-transform: translate(93vw, 5vh);
+          transform: translate(93vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(63) {
+  -webkit-transform: translate(59vw, 1vh);
+          transform: translate(59vw, 1vh);
+}
+
+#prism-effects .bottom .particle:nth-child(64) {
+  -webkit-transform: translate(73vw, 5vh);
+          transform: translate(73vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(65) {
+  -webkit-transform: translate(94vw, 9vh);
+          transform: translate(94vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(66) {
+  -webkit-transform: translate(25vw, 5vh);
+          transform: translate(25vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(67) {
+  -webkit-transform: translate(55vw, 4vh);
+          transform: translate(55vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(68) {
+  -webkit-transform: translate(69vw, 4vh);
+          transform: translate(69vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(69) {
+  -webkit-transform: translate(41vw, 7vh);
+          transform: translate(41vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(70) {
+  -webkit-transform: translate(42vw, 8vh);
+          transform: translate(42vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(71) {
+  -webkit-transform: translate(77vw, 4vh);
+          transform: translate(77vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(72) {
+  -webkit-transform: translate(42vw, 4vh);
+          transform: translate(42vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(73) {
+  -webkit-transform: translate(48vw, 1vh);
+          transform: translate(48vw, 1vh);
+}
+
+#prism-effects .bottom .particle:nth-child(74) {
+  -webkit-transform: translate(25vw, 4vh);
+          transform: translate(25vw, 4vh);
+}
+
+#prism-effects .bottom .particle:nth-child(75) {
+  -webkit-transform: translate(85vw, 3vh);
+          transform: translate(85vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(76) {
+  -webkit-transform: translate(84vw, 8vh);
+          transform: translate(84vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(77) {
+  -webkit-transform: translate(79vw, 6vh);
+          transform: translate(79vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(78) {
+  -webkit-transform: translate(83vw, 6vh);
+          transform: translate(83vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(79) {
+  -webkit-transform: translate(87vw, 9vh);
+          transform: translate(87vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(80) {
+  -webkit-transform: translate(77vw, 2vh);
+          transform: translate(77vw, 2vh);
+}
+
+#prism-effects .bottom .particle:nth-child(81) {
+  -webkit-transform: translate(84vw, 8vh);
+          transform: translate(84vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(82) {
+  -webkit-transform: translate(60vw, 3vh);
+          transform: translate(60vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(83) {
+  -webkit-transform: translate(53vw, 2vh);
+          transform: translate(53vw, 2vh);
+}
+
+#prism-effects .bottom .particle:nth-child(84) {
+  -webkit-transform: translate(59vw, 5vh);
+          transform: translate(59vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(85) {
+  -webkit-transform: translate(67vw, 6vh);
+          transform: translate(67vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(86) {
+  -webkit-transform: translate(55vw, 9vh);
+          transform: translate(55vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(87) {
+  -webkit-transform: translate(42vw, 8vh);
+          transform: translate(42vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(88) {
+  -webkit-transform: translate(34vw, 8vh);
+          transform: translate(34vw, 8vh);
+}
+
+#prism-effects .bottom .particle:nth-child(89) {
+  -webkit-transform: translate(52vw, 1vh);
+          transform: translate(52vw, 1vh);
+}
+
+#prism-effects .bottom .particle:nth-child(90) {
+  -webkit-transform: translate(67vw, 3vh);
+          transform: translate(67vw, 3vh);
+}
+
+#prism-effects .bottom .particle:nth-child(91) {
+  -webkit-transform: translate(20vw, 9vh);
+          transform: translate(20vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(92) {
+  -webkit-transform: translate(26vw, 7vh);
+          transform: translate(26vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(93) {
+  -webkit-transform: translate(48vw, 6vh);
+          transform: translate(48vw, 6vh);
+}
+
+#prism-effects .bottom .particle:nth-child(94) {
+  -webkit-transform: translate(38vw, 7vh);
+          transform: translate(38vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(95) {
+  -webkit-transform: translate(13vw, 9vh);
+          transform: translate(13vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(96) {
+  -webkit-transform: translate(66vw, 5vh);
+          transform: translate(66vw, 5vh);
+}
+
+#prism-effects .bottom .particle:nth-child(97) {
+  -webkit-transform: translate(91vw, 2vh);
+          transform: translate(91vw, 2vh);
+}
+
+#prism-effects .bottom .particle:nth-child(98) {
+  -webkit-transform: translate(83vw, 9vh);
+          transform: translate(83vw, 9vh);
+}
+
+#prism-effects .bottom .particle:nth-child(99) {
+  -webkit-transform: translate(7vw, 7vh);
+          transform: translate(7vw, 7vh);
+}
+
+#prism-effects .bottom .particle:nth-child(100) {
+  -webkit-transform: translate(90vw, 7vh);
+          transform: translate(90vw, 7vh);
+}
+/*# sourceMappingURL=style.css.map */

@@ -5,7 +5,8 @@ $(function(){
           $("<div></div>", {
             id:"prism-effects"
           }).html(function(){
-            var inText = "<ul>";
+            var inText = "";
+            inText += '<div class="left">';
             inText += '<div class="particle"></div>';
             inText += '<div class="particle"></div>';
             inText += '<div class="particle"></div>';
@@ -20,8 +21,59 @@ $(function(){
             inText += '<div class="particle"></div>';
             inText += '<div class="particle"></div>';
             inText += '<div class="particle"></div>';
+            inText += '</div>';
+
+            inText += '<div class="right">';
             inText += '<div class="particle"></div>';
             inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '</div>';
+
+            inText += '<div class="top">';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '</div>';
+
+            inText += '<div class="bottom">';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '<div class="particle"></div>';
+            inText += '</div>';
+
             return inText;
             }).appendTo($("body"))
 
