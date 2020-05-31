@@ -1,0 +1,19 @@
+{
+  "name": "metaCheckMan",
+  "version": "0.0.5",
+  "manifest_version":2,
+  "description": "metaデータのチェック",
+  "permissions": [
+    "activeTab"
+  ],
+  "background":{
+    "scripts":  ["./src/background.js"]
+  },
+  "page_action": {
+    "default_icon": "./icon/off19.png",
+    "default_title": "meta Check"
+  },
+  "icons" : {
+    "128": "./icon/128.png"
+  }
+}
