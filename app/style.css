@@ -1,0 +1,16 @@
+#prism-effects{
+  width: 100vw;
+  height:100vh;
+  z-index:99999;
+  background-color:rgba(0,0,0,0.6);
+  position:fixed;
+  color:#fff;
+  top:0;
+  pointer-events: none;
+}
+#prism-effects .particle {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(104, 255, 230);
+  margin:10px;
+}

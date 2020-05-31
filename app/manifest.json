@@ -7,7 +7,7 @@
     "activeTab"
   ],
   "background":{
-    "scripts":  ["./src/background.js"]
+    "scripts":  ["background.js"]
   },
   "page_action": {
     "default_icon": "./icon/off19.png",
